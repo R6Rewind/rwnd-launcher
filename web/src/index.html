@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RWND Parabellum</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root">
+  <div id="host"></div>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-stack">
+      <div id="overlay-mark" class="overlay-mark"></div>
+      <div id="overlay-title" class="title overlay-title"></div>
+      <div id="overlay-text" class="body overlay-text"></div>
+      <div id="overlay-progress" class="progress indeterminate"><div class="fill"></div><div class="sweep"></div></div>
+      <div id="update-actions" class="hidden">
+        <button id="download-update" class="btn primary update-button"><span class="icon">&#xE896;</span><span>Download update</span></button>
+        <div id="update-hint" class="body update-hint"></div>
+        <button id="update-later" class="link update-later">Later</button>
+      </div>
+      <div id="unreachable-actions" class="hidden">
+        <button id="retry-connect" class="btn primary update-button"><span class="icon">&#xE72C;</span><span>Retry</span></button>
+        <button id="continue-offline" class="link update-later">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"><div id="toast-text" class="body"></div><button id="toast-action" class="link hidden" type="button"></button></div>
+
+  <div class="caption"></div>
+  <div class="chrome">
+    <button class="chrome-button" id="minimize" title="Minimize">&#xE921;</button>
+    <button class="chrome-button" id="maximize" title="Maximize">&#xE922;</button>
+    <button class="chrome-button close" id="close" title="Close">&#xE8BB;</button>
+  </div>
+  <div class="edge l" data-edge="l"></div><div class="edge r" data-edge="r"></div><div class="edge t" data-edge="t"></div><div class="edge b" data-edge="b"></div>
+  <div class="edge tl" data-edge="tl"></div><div class="edge tr" data-edge="tr"></div><div class="edge bl" data-edge="bl"></div><div class="edge br" data-edge="br"></div>
+</div>
+<div id="tooltip" class="tooltip hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
